@@ -15,6 +15,18 @@ public class InventoryManager : MonoBehaviour
         ChangedSelectedSlot(0);
     }
 
+
+    private void Update()
+    {
+        if (Input.inputString != null)
+        {
+            bool isNumber = int.TryParse(Input.inputString, out int number);
+            if (isNumber && number > 0 && number < 7 )
+            {
+                ChangedSelectedSlot  (number - 1);
+            }
+        }
+    }
     void ChangedSelectedSlot(int newValue)
     {
         if (selectedSlot >= 0)
