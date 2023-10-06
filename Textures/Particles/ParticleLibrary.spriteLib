@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a5e6fedc2472449cead18ef23b5cb30d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library:
+  - m_Name: ItemPickupParticles
+    m_Hash: 733589787
+    m_CategoryList: []
+    m_OverrideEntries:
+    - m_Name: ItemPickupParticle_0
+      m_Hash: 119850194
+      m_Sprite: {fileID: -1999498515, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1999498515, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_1
+      m_Hash: 807662660
+      m_Sprite: {fileID: -2011896880, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2011896880, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_2
+      m_Hash: 690660862
+      m_Sprite: {fileID: -1586873639, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1586873639, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_3
+      m_Hash: 506303848
+      m_Sprite: {fileID: 1221498888, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1221498888, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_4
+      m_Hash: 4784331
+      m_Sprite: {fileID: 485128275, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 485128275, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_5
+      m_Hash: 927871069
+      m_Sprite: {fileID: -18246960, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -18246960, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_6
+      m_Hash: 776430055
+      m_Sprite: {fileID: -232825984, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -232825984, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_7
+      m_Hash: 423645553
+      m_Sprite: {fileID: 231774115, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 231774115, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_8
+      m_Hash: 167726304
+      m_Sprite: {fileID: 1129626771, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1129626771, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_9
+      m_Hash: 1056472182
+      m_Sprite: {fileID: -486767871, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -486767871, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_10
+      m_Hash: 89815388
+      m_Sprite: {fileID: -510678176, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -510678176, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_11
+      m_Hash: 844974538
+      m_Sprite: {fileID: -2018091241, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -2018091241, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_12
+      m_Hash: 726931568
+      m_Sprite: {fileID: 1419384607, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: 1419384607, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_13
+      m_Hash: 475212006
+      m_Sprite: {fileID: -1522250167, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1522250167, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    - m_Name: ItemPickupParticle_14
+      m_Hash: 37207365
+      m_Sprite: {fileID: -1499397060, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+      m_FromMain: 0
+      m_SpriteOverride: {fileID: -1499397060, guid: 4c3da9e531959a947917dc84680942d7, type: 3}
+    m_FromMain: 0
+    m_EntryOverrideCount: 15
+  m_PrimaryLibraryGUID: 
+  m_ModificationHash: 638321201089930175
+  m_Version: 1

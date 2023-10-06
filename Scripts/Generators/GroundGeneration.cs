@@ -1,9 +1,5 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using TreeEditor;
 using UnityEngine;
 
 public class GroundGeneration : MonoBehaviour
@@ -12,6 +8,9 @@ public class GroundGeneration : MonoBehaviour
 
     [SerializeField]
     GameObject groundTile;
+
+    [SerializeField]
+    GameObject grassTile;
 
 
     GameObject player;
@@ -43,17 +42,16 @@ public class GroundGeneration : MonoBehaviour
 
         List<Vector2> checks = new List<Vector2>();
 
-        int radius = 20; // Radius of the circle
-        int centerX = 0; // X-coordinate of the center of the circle
-        int centerY = 0; // Y-coordinate of the center of the circle
+        int radius = 20; 
+        int centerX = 0; 
+        int centerY = 0; 
 
-        int numberOfPoints = 360; // Number of points to check (e.g., 360 for a complete circle)
+        int numberOfPoints = 360; 
 
         for (int i = 0; i < numberOfPoints; i++)
         {
-            double angle = 2 * Math.PI * i / numberOfPoints; // Calculate the angle in radians
+            double angle = 2 * Math.PI * i / numberOfPoints; 
 
-            // Calculate the coordinates of the point on the circle
             int x = (int)(centerX + radius * Math.Cos(angle));
             int y = (int)(centerY + radius * Math.Sin(angle));
 
@@ -105,21 +103,47 @@ public class GroundGeneration : MonoBehaviour
             for (float i = tileOffsetY; i > -tileOffsetY; i--)
             {
 
-                if(Physics2D.OverlapPointAll(new Vector2(pos.x, Mathf.RoundToInt(i))).Length == 0)
+                if(i == tileOffsetY)
                 {
 
-                    GameObject temp = Instantiate(groundTile);
-                    tiles.Add(temp);
-                    temp.transform.position = new Vector2(pos.x, Mathf.RoundToInt(i));
-                    temp.transform.parent = gameObject.GetComponentInChildren<Transform>().gameObject.transform;
+                    if (Physics2D.OverlapPointAll(new Vector2(pos.x, Mathf.RoundToInt(i))).Length == 0)
+                    {
+
+                        GameObject temp = Instantiate(grassTile);
+                        tiles.Add(temp);
+                        temp.transform.position = new Vector2(pos.x, Mathf.RoundToInt(i));
+                        temp.transform.parent = gameObject.GetComponentInChildren<Transform>().gameObject.transform;
+
+                    }
+                    else
+                    {
+
+                        break;
+
+                    }
 
                 }
                 else
                 {
 
-                    break;
+                    if (Physics2D.OverlapPointAll(new Vector2(pos.x, Mathf.RoundToInt(i))).Length == 0)
+                    {
+
+                        GameObject temp = Instantiate(groundTile);
+                        tiles.Add(temp);
+                        temp.transform.position = new Vector2(pos.x, Mathf.RoundToInt(i));
+                        temp.transform.parent = gameObject.GetComponentInChildren<Transform>().gameObject.transform;
+
+                    }
+                    else
+                    {
+
+                        break;
+
+                    }
 
                 }
+
 
             }
 
@@ -141,7 +165,7 @@ public class GroundGeneration : MonoBehaviour
 
                 GameObject temp = Instantiate(groundTile);
                 tiles.Add(temp);
-                temp.transform.position = new Vector2(pos.x, pos.y);
+                temp.transform.position = new Vector2(Mathf.RoundToInt(pos.x), Mathf.RoundToInt( pos.y));
                 temp.transform.parent = gameObject.GetComponentInChildren<Transform>().gameObject.transform;
 
 

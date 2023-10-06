@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EntityManager : MonoBehaviour
@@ -20,9 +18,11 @@ public class EntityManager : MonoBehaviour
     void Start()
     {
 
+        camera = GameObject.Find("Main Camera");
+
         player = Instantiate(playerPrefab);
         player.transform.SetParent(transform, false);
-        player.transform.position = Vector2.zero;
+        player.transform.position = Vector2.up * 10;
         player.name = "Player";
 
         gg.SetPlayer(player);
