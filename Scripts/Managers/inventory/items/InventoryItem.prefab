@@ -32,11 +32,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1473110647898774841}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -50, y: -40.4802}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 19.0396}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0}
 --- !u!222 &8190826022768545195
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 6414073637118176429}
-  countText: {fileID: 0}
+  countText: {fileID: 8440821416995694374}
   item: {fileID: 0}
   count: 1
   parentAfterDrag: {fileID: 0}

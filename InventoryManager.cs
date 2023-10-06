@@ -9,13 +9,16 @@ public class InventoryManager : MonoBehaviour
     public GameObject inventoryItemPrefab;
      
     int selectedSlot = -1;
-
+    
+    
+    
+    // ser till att en slot är selected för att indikera vilken slot som är "aktiv"
     public void Start()
     {
         ChangedSelectedSlot(0);
     }
 
-
+    // Update checkar vilken slot i tool'baren som är aktiv. (mellan 1-6)
     private void Update()
     {
         if (Input.inputString != null)
@@ -27,6 +30,10 @@ public class InventoryManager : MonoBehaviour
             }
         }
     }
+    
+    
+
+    // denna ändrar färg på selected slot
     void ChangedSelectedSlot(int newValue)
     {
         if (selectedSlot >= 0)
@@ -40,6 +47,8 @@ public class InventoryManager : MonoBehaviour
         selectedSlot = newValue;
     }
 
+    
+    //här adderar/skapar jag nya items
     public bool AddItem(Item item)
     {
         // check if any slot has same item count
@@ -58,7 +67,9 @@ public class InventoryManager : MonoBehaviour
             }
         }
 
-        //find any empty slot
+        
+        
+        //Here i look for empty slots in inventory
         for (int i = 0; i < InventorySlots.Length; i++)
         {
             InventorySlot slot = InventorySlots[i];
@@ -72,6 +83,8 @@ public class InventoryManager : MonoBehaviour
         return false;
     }
 
+    
+    // denna ser till så items är olika och nya
     void SpawnNewItem(Item item, InventorySlot slot)
     {
         GameObject newItemGo = Instantiate(inventoryItemPrefab, slot.transform);

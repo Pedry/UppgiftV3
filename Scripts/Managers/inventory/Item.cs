@@ -8,7 +8,7 @@ public class Item : ScriptableObject
 {
 
     
-
+    //enums och annat roligt
 
     [Header("Only gameplay")]
     public ItemType type;
